@@ -16,7 +16,7 @@ const CategoryProducts = ({name}) => {
       }, [])
 
     return (
-        <div className='grid grid-cols-3 gap-6 mt-7'>
+        <div className='grid md:grid-cols-3 gap-6 mt-7'>
         {
             products.map(product => {
                 return <div className='h-[350px] cursor-pointer hover:scale-105 transition-transform flex justify-between flex-col gap-1 bg-white overflow-hidden object-center p-4 rounded-md' data-aos="fade-down" data-aos-duration="2000">

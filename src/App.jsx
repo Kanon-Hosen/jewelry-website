@@ -5,7 +5,7 @@ import MainRoute from "./MainRoute/MainRoute";
 
 function App() {
   return (
-    <div className="px-24">
+    <div className="md:px-24 px-6">
       <MainRoute></MainRoute>
     </div>
   );

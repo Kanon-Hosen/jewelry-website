@@ -12,7 +12,7 @@ const Products = () => {
     return (
         <div className='my-10'>
             <h1 className='font-semibold text-2xl mb-4 text-white text-left'>All Products: <strong>{products.length}</strong></h1>
-            <div className='grid grid-cols-4 gap-6 mt-8'>
+            <div className='grid grid-cols-2 md:grid-cols-4 gap-6 mt-8'>
             {
             products.map(product => {
                 return <div className='h-[350px] cursor-pointer hover:scale-105 transition-transform flex justify-between flex-col gap-1 bg-white overflow-hidden object-center p-4 rounded-md'>

@@ -24,11 +24,11 @@ const Categories = () => {
     return (
         <div className='pt-10'>
             <h1 className='text-center font-semibold text-4xl text-white my-5' data-aos="fade-down" data-aos-duration="1000">Featured Categories</h1>
-            <ul className='flex items-center justify-center mb-4 gap-7' data-aos="fade-up" data-aos-duration="1000">
+            <ul className='flex items-center justify-center mb-4 gap-3 md:gap-7' data-aos="fade-up" data-aos-duration="1000">
                 {
                     categories.map(category => {
                         return <div>
-                            <li className={` btn btn-primary cursor-pointer hover:btn-primary hover:btn`} onClick={(e)=>setLinkText(e.target.innerText)}>{category}</li>
+                            <li className={` btn text-xs md:text-sm btn-primary cursor-pointer hover:btn-primary hover:btn`} onClick={(e)=>setLinkText(e.target.innerText)}>{category}</li>
                         </div>
                     })
                 }
